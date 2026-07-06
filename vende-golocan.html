@@ -6,22 +6,24 @@
 <title>Vendé Golocan | Sumá Golocan a tu comercio</title>
 <link rel="stylesheet" href="styles.css">
 <style>
-  .vg-hero{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:40px 0 60px;}
+  .vg-hero{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:40px 30px 60px;}
   .vg-hero h1{font-size:36px;}
-  .vg-hero p{font-size:16.5px;margin:20px 0 28px;}
+  .vg-hero p{font-size:1.2rem;margin:20px 0 28px;}
+  .vg-hero .venta {font-family: 'Baloo 2'; color: var(--red-600);font-size: 1.5rem; font-weight: 600;}
   .vg-hero .actions{display:flex;gap:14px;flex-wrap:wrap;}
-  .vg-hero .media-ph{height:330px; max-width: 60%}
+  .vg-hero .media-ph{height:400px; max-width: 80%}
+  .vg-hero .media-ph img{max-height: 100%}
 
   .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:46px;}
   .info-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-md);padding:30px 32px;box-shadow:var(--shadow-sm);}
-  .info-card h3{color:var(--red-600);font-size:19px;margin-bottom:10px;}
-  .info-card p{font-size:14.5px;}
+  .info-card h3{color:var(--red-600);font-size:1.3rem;margin-bottom:10px; padding-top: 10px;}
+  .info-card p{font-size:1.1rem;}
 
   .tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:40px;}
   .tool-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-md);padding:28px 26px;box-shadow:var(--shadow-sm);}
   .tool-card svg{color:var(--ink);margin-bottom:14px;}
-  .tool-card h3{color:var(--red-600);font-size:17px;margin-bottom:8px;}
-  .tool-card p{font-size:14px;}
+  .tool-card h3{color:var(--red-600);font-size:1.3rem;margin-bottom:8px;}
+  .tool-card p{font-size:1.1rem;}
 
   .cta-band{background:var(--red-600);padding:70px 0;}
   .cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border-radius:var(--radius-lg);overflow:hidden;}
@@ -29,19 +31,23 @@
   .cta-left h2{font-size:30px;color:#fff;margin-bottom:16px;}
   .cta-left p{color:#D8D2CE;margin-bottom:30px;}
   .cta-right{background:#fff;padding:54px 50px;}
-  .cta-right h2{font-size:24px;color:var(--red-600);margin-bottom:24px;}
+  .cta-right h2{font-size:30px;color:var(--red-600);margin-bottom:24px;}
   .field{margin-bottom:18px;}
-  .field label{display:block;font-size:13.5px;font-weight:700;margin-bottom:7px;}
+  .field label{display:block;font-size:1.1rem;font-weight:700;margin-bottom:7px;}
   .field input{
     width:100%;padding:13px 16px;border-radius:12px;border:1.5px solid var(--line);
-    font-family:var(--font-body);font-size:14.5px;background:var(--cream);
+    font-family:var(--font-body);font-size:1.2rem;background:var(--cream);
   }
   .field input:focus{outline:none;border-color:var(--red-600);}
 
   .footer-logo img {filter: invert(34%) sepia(96%) saturate(7465%) hue-rotate(358deg) brightness(87%) contrast(106%);}
 
   @media (max-width:980px){
-    .vg-hero{grid-template-columns:1fr;}
+    .vg-hero{grid-template-columns:1fr; padding: 40px 20px 40px; text-align: center; align-items: center; justify-content: center;}
+    .vg-hero .actions {display: flex; flex-wrap: nowrap; gap:15px; justify-content: center;}
+    .actions .btn{padding: 13px 20px }
+    .vg-hero .media-ph{max-width: 100%}
+    .vg-hero .media-ph img{max-height: 100%;}
     .info-grid{grid-template-columns:1fr;}
     .tool-grid{grid-template-columns:1fr;}
     .cta-grid{grid-template-columns:1fr;}
@@ -59,11 +65,11 @@
     <nav class="main-nav">
       <ul>
         <li><a href="productos.html">Productos</a></li>
-        <li><a href="vende-golocan.html" class="active">Vendé Golocan</a></li>
+        <li><a href="vende-golocan.html" class="active">Venta Mayorista</a></li>
         <li><a href="donde-comprar.html">¿Dónde comprar?</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="contactanos.html">Contactanos</a></li>
-        <li><a href="#">Nuestra tienda</a></li>
+        <li><a href="#">Venta Minorista</a></li>
       </ul>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú">
@@ -78,8 +84,9 @@
 
 <section class="wrap vg-hero">
   <div>
-    <h1>Sumá Golocan<br>a tu comercio</h1>
-    <p>Si querés comercializar Golocan, nuestro equipo te acompaña para encontrar la alternativa más conveniente según tu negocio, ubicación y volumen de compra.</p>
+    <p class="venta">Venta Mayorista</p>
+    <h1>Vendé Golocan<br>en tu comercio</h1>
+    <p>Si querés comercializar Golocan en Argentina, Uruguay, Paraguay, Perú o Ecuador, nuestro equipo te asesora para encontrar la alternativa más conveniente según tu negocio y el volumen de compra.</p>
     <div class="actions">
       <a href="#contacto" class="btn btn-primary">Escribir por WhatsApp</a>
       <a href="#contacto" class="btn btn-outline-red">Completar formulario</a>
@@ -98,18 +105,22 @@
 
     <div class="info-grid">
       <div class="info-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 333.3 331.3"><path d="M42.6 42.6c23.3-23.3 53.9-35 84.5-35s61.1 11.7 84.4 35 35 53.9 35 84.4-9.2 54.4-27.7 76.5l18.5 18.5c4.9-2.5 10.3-3.7 15.7-3.7 8.9 0 17.7 3.4 24.5 10.1l38.1 38.1c6.8 6.8 10.1 15.7 10.1 24.5s-3.4 17.8-10.1 24.5c-6.8 6.8-15.7 10.1-24.5 10.1s-17.7-3.4-24.5-10.2l-38.7-38.7c-6.3-6.7-9.5-15.3-9.5-23.9s1.2-10.8 3.7-15.7l-18.5-18.5c-22.1 18.5-49.3 27.7-76.5 27.7s-61.1-11.7-84.4-35c-23.4-23.1-35.1-53.7-35.1-84.2s11.7-61.1 35-84.4ZM171 88c0-5.9 4.8-10.8 10.8-10.8S192.6 82 192.6 88v78.1c0 5.9-4.8 10.8-10.8 10.8s-10.8-4.8-10.8-10.8zm-36.5 23.4c0-5.9 4.8-10.8 10.8-10.8s10.8 4.8 10.8 10.8v54.7c0 5.9-4.8 10.8-10.8 10.8s-10.8-4.8-10.8-10.8zm-36.4 23.4c0-5.9 4.8-10.8 10.8-10.8s10.8 4.8 10.8 10.8v31.3c0 5.9-4.8 10.8-10.8 10.8s-10.8-4.8-10.8-10.8zm-36.5 12.6c0-5.9 4.8-10.8 10.8-10.8s10.8 4.8 10.8 10.8v18.8c0 5.9-4.8 10.8-10.8 10.8s-10.8-4.8-10.8-10.8zm182.1 96.3c-2.6 2.6-3.8 5.9-3.8 9.3s1.1 6.4 3.4 8.9l38.5 38.5c2.5 2.5 5.9 3.8 9.3 3.8s6.8-1.3 9.3-3.8 3.8-5.9 3.8-9.3-1.3-6.8-3.8-9.3l-38.1-38.1c-2.5-2.5-5.9-3.8-9.3-3.8s-6.8 1.3-9.3 3.8M127.1 29.2c-25 0-50.1 9.6-69.2 28.7S29.2 102 29.2 127.1s9.6 50.1 28.7 69.2 44.2 28.6 69.2 28.6 50.1-9.6 69.2-28.6c19.1-19.1 28.7-44.2 28.7-69.2s-9.6-50.1-28.7-69.2-44.1-28.7-69.2-28.7"/></svg>
         <h3>Condiciones comerciales</h3>
         <p>Analizamos tu perfil para ofrecerte las mejores condiciones disponibles según el tipo de negocio (Pet shop, veterinaria, cadena, etc.).</p>
       </div>
       <div class="info-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 800 800"><path d="M423.7 403.5c0-17.8-14.5-32.3-32.3-32.3s-32.3 14.5-32.3 32.3zm-32.3 298.1h-32.3c0 10.7 5.3 20.8 14.2 26.8s20.2 7.2 30.1 3.2zm247.5-99.4 12 30c12.2-4.9 20.3-16.8 20.3-30zm32.3-206.5c0-17.8-14.5-32.3-32.3-32.3s-32.3 14.5-32.3 32.3zM411 377.9c-14.2-10.8-34.5-8.1-45.3 6.1s-8.1 34.5 6.1 45.3L411 378Zm68.6 93.1L460 496.7c9.6 7.3 22.5 8.7 33.4 3.5zm173-46.1c16.1-7.6 23-26.9 15.4-43s-26.9-23-43-15.4zm-273.3-51.4c-16.6 6.6-24.6 25.5-17.9 42 6.6 16.6 25.5 24.6 42 17.9l-24.1-60Zm271.6-39.3c16.6-6.6 24.6-25.5 17.9-42-6.6-16.6-25.5-24.6-42-17.9l24.1 60Zm-24.1 0c16.6 6.6 35.4-1.4 42-18s-1.4-35.4-18-42l-24.1 60ZM403.4 174.9c-16.6-6.6-35.4 1.4-42 18s1.4 35.4 18 42l24.1-60Zm251.3 101.2c-15.6-8.7-35.3-3.2-44 12.3-8.7 15.6-3.2 35.3 12.3 44zm72.5 77.8 13.8 29.2c10.9-5.2 18.1-16 18.5-28.1s-5.9-23.4-16.5-29.3zm-102.3 12.6c-16.1 7.6-23 26.9-15.4 43s26.9 23 43 15.4zm-10.1-84c-12 13.2-11 33.7 2.3 45.6 13.2 12 33.7 11 45.6-2.3l-47.9-43.4Zm129.9-95.4 24 21.7c7.3-8.1 10.1-19.3 7.3-29.9s-10.7-19-21-22.5L744.7 187ZM479.6 98.4l10.3-30.6c-12.6-4.2-26.6-.3-35.1 10l24.9 20.7Zm-113.3 85.8c-11.4 13.7-9.5 34.1 4.2 45.5s34.1 9.5 45.5-4.2zm-234.7 90c-16.6 6.6-24.6 25.5-18 42 6.6 16.6 25.5 24.6 42 18l-24.1-60Zm271.6-39.3c16.6-6.6 24.6-25.5 18-42-6.6-16.6-25.5-24.6-42-18l24.1 60Zm-243.7 97.4c15.6-8.7 21.1-28.4 12.3-44-8.7-15.6-28.4-21.1-44-12.3zM55.3 353.9l-15.8-28.2C29 331.6 22.6 342.9 23 355s7.5 22.9 18.5 28.1zm74.6 71c16.1 7.6 35.4.7 43-15.4s.8-35.4-15.4-43l-27.7 58.4Zm25.8-150.7c-16.6-6.6-35.4 1.4-42 17.9-6.6 16.6 1.4 35.4 17.9 42l24.1-60Zm223.4 159.3c16.6 6.6 35.4-1.4 42-17.9 6.6-16.6-1.4-35.4-17.9-42l-24.1 60ZM119.5 325.7c11.9 13.3 32.3 14.5 45.6 2.7 13.3-11.9 14.5-32.3 2.7-45.6l-48.3 43ZM55.3 204.9l-12.8-29.7c-9.5 4.1-16.5 12.5-18.8 22.7s.5 20.7 7.4 28.5l24.1-21.5ZM302.8 98.4l24.9-20.6c-9.2-11-24.5-14.7-37.6-9l12.8 29.7Zm63.5 127.1c11.4 13.7 31.8 15.6 45.5 4.2s15.6-31.8 4.2-45.5zm57.2 178.1c0-17.8-14.5-32.3-32.3-32.3s-32.3 14.5-32.3 32.3zm-32.3 298-12 30c10 4 21.2 2.8 30.1-3.2s14.2-16 14.2-26.8zm-247.5-99.4h-32.3c0 13.2 8 25.1 20.3 30zM176 395.7c0-17.8-14.5-32.3-32.3-32.3s-32.3 14.5-32.3 32.3zm234.8 33.5c14.2-10.8 16.9-31.1 6.1-45.3s-31.1-16.9-45.3-6.1zm-108 41.8L289 500.2c10.9 5.2 23.8 3.8 33.4-3.5zM157.5 366.5c-16.1-7.6-35.4-.7-43 15.4s-.7 35.4 15.4 43zm201.6 37v298.1h64.6V403.5zm44.3 328.1 247.5-99.4-24.1-60-247.5 99.4zm267.8-129.4V395.6h-64.6v206.6zm-299.4-173 88.2 67.4 39.2-51.3-88.2-67.4zm121.6 71 159.1-75.3-27.6-58.4-159.1 75.3zm-90-66.7 247.5-99.4-24.1-60-247.5 99.4zm247.5-159.3-247.5-99.3-24.1 60 247.5 99.3zM623 332.4l88.4 49.7 31.7-56.3-88.4-49.7zm90.4-7.7-88.5 41.8 27.6 58.4 88.5-41.8zm-50.7 1.2 105.9-117.1-47.9-43.4-105.9 117.1zm92.2-169.4L489.8 67.8l-20.5 61.3 265.1 88.7zM454.8 77.7l-88.5 106.5 49.7 41.3L504.5 119zM155.7 334.2l247.5-99.3-24.1-60-247.5 99.3zM127.8 276l-88.4 49.7L71.1 382l88.4-49.7zM41.5 383.1l88.4 41.8 27.7-58.4-88.4-41.8zm90.1-48.9 247.5 99.4 24.1-60-247.5-99.4zm36.2-51.5-88.4-99.3-48.3 43 88.4 99.3zm-99.7-48.2L315.6 128l-25.5-59.4L42.5 175.2 68 234.6ZM277.9 119l88.4 106.5 49.7-41.3-88.4-106.5zm81 284.6v298h64.6v-298zm44.3 268-247.5-99.4-24.1 60 247.5 99.4zM176 602.2V395.6h-64.6v206.6zm195.6-224.4-88.4 67.4 39.2 51.4 88.4-67.4zm-55 64-159.1-75.3-27.6 58.4L289 500.2z"/></svg>
         <h3>Cantidades mínimas</h3>
         <p>Te informamos los mínimos para comenzar y las alternativas disponibles según el volumen de compra.</p>
       </div>
       <div class="info-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="none" viewBox="0 -1 26 26"><path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12.31 16.826c-.024 1.17-.964 2.102-2.105 2.086s-2.056-.974-2.048-2.144.935-2.116 2.076-2.116a2.07 2.07 0 0 1 1.478.646c.39.408.605.957.599 1.528M22.201 16.826c-.023 1.17-.963 2.102-2.104 2.086s-2.056-.974-2.049-2.144.935-2.116 2.077-2.116a2.07 2.07 0 0 1 1.477.646c.39.408.605.957.6 1.528" clip-rule="evenodd"/><path fill="#000" d="M17.803 17.576a.75.75 0 0 0 0-1.5zm-5.493-1.5a.75.75 0 0 0 0 1.5zm4.747.75a.75.75 0 1 0 1.5 0zm1.5-5.267a.75.75 0 0 0-1.5 0zm-.75 4.517a.75.75 0 1 0 0 1.5zm.245 1.5a.75.75 0 0 0 0-1.5zm4.137-1.5a.75.75 0 1 0 .032 1.5zm2.211-1.591.75-.013a1 1 0 0 0-.011-.115zm.23-3.054a.75.75 0 0 0-1.478.257zm-6.827-5.304a.75.75 0 0 0 0 1.5zm3.482.75v.75h.005zm1.589.687-.547.513zm.61 1.654-.75-.032a.8.8 0 0 0 .01.16zm-.332 2.47a.75.75 0 1 0 1.478-.258zm-4.599-4.811a.75.75 0 1 0-1.5 0zm-1.5 4.682a.75.75 0 0 0 1.5 0zm0-4.682a.75.75 0 0 0 1.5 0zm.75-.8-.75-.005v.005zM16.766 5l.004-.75h-.004zM7.42 5v-.75h-.003zm-.736.317-.54-.521zm-.302.758h.75v-.003zm0 9.675.75.003v-.003zm.302.758-.54.521zm.736.317-.003.75h.003zm.733.75a.75.75 0 0 0 0-1.5zm9.652-6.767a.75.75 0 0 0 0 1.5zm6.088 1.5a.75.75 0 0 0 0-1.5zM1 6.25a.75.75 0 0 0 0 1.5zm3.052 1.5a.75.75 0 0 0 0-1.5zm-2.077 1.5a.75.75 0 0 0 0 1.5zm1.95 1.5a.75.75 0 0 0 0-1.5zm-1.355 1.5a.75.75 0 0 0 0 1.5zm1.355 1.5a.75.75 0 0 0 0-1.5zm13.878 2.326H12.31v1.5h5.493zm.754.75v-5.267h-1.5v5.267zm-.75.75h.245v-1.5h-.245zm4.415 0c1.666-.036 2.957-1.442 2.928-3.104l-1.5.026c.016.872-.656 1.56-1.461 1.578zm2.917-3.22-.509-2.925-1.478.257.51 2.925zm-7.336-6.729h3.482v-1.5h-3.482zm3.487 0a1.4 1.4 0 0 1 1.037.45L23.42 7.05a2.9 2.9 0 0 0-2.14-.923zm1.037.45c.275.294.425.694.407 1.109l1.499.064a3.03 3.03 0 0 0-.813-2.2zm.418 1.27.407 2.34 1.478-.257-.408-2.34zm-5.692-2.47v4.682h1.5V6.877zm1.5 0v-.8h-1.5v.8zm0-.795a1.83 1.83 0 0 0-.51-1.284l-1.081 1.04c.057.06.092.143.091.234zm-.51-1.284a1.78 1.78 0 0 0-1.273-.548l-.008 1.5a.28.28 0 0 1 .2.088zm-1.277-.548H7.42v1.5h9.346zm-9.35 0a1.78 1.78 0 0 0-1.271.546l1.079 1.042a.28.28 0 0 1 .2-.088zm-1.271.546a1.83 1.83 0 0 0-.513 1.282l1.5-.006c0-.091.035-.175.092-.234zm-.513 1.279v9.675h1.5V6.075zm0 9.672c-.002.476.18.938.513 1.282l1.079-1.042a.34.34 0 0 1-.092-.234zm.513 1.282c.333.345.79.544 1.272.546l.007-1.5a.28.28 0 0 1-.2-.088zm1.275.546h.733v-1.5H7.42zm10.385-5.267h6.088v-1.5h-6.088zM1 7.75h3.052v-1.5H1zm.975 3h1.95v-1.5h-1.95zm.595 3h1.355v-1.5H2.57z"/></svg>
         <h3>Cobertura y logística</h3>
         <p>Evaluamos tu ubicación para indicarte las opciones de entrega, cobertura y disponibilidad en tu zona.</p>
       </div>
       <div class="info-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 84.9 85.1" style="margin: 15px 0;"><path d="M12 13.6c2.1 0 3.8 1.7 3.8 3.8v45.8c0 4.8 3.9 8.8 8.8 8.8h45.8c2.1 0 3.8 1.7 3.8 3.8s-1.7 3.8-3.8 3.8H24.5c-9 0-16.2-7.3-16.2-16.2v-46c0-2.1 1.7-3.8 3.8-3.7ZM67.2 32l2.2 6.6c.7 2 2.8 3 4.8 2.4 2-.7 3-2.8 2.4-4.8L71.5 21c-.7-1.9-2.8-3-4.7-2.4l-15.4 5c-2 .6-3.1 2.8-2.4 4.7.6 2 2.8 3.1 4.7 2.4l7.1-2.3-8.3 16.1-9.3-7.4c-.8-.7-1.9-.9-3-.8-1.1.2-2 .8-2.6 1.7L25.7 57.1c-1.1 1.8-.6 4.1 1.2 5.2s4.1.6 5.2-1.2l9.7-15.5 9.6 7.7c.9.7 2 1 3.1.7 1.1-.2 2-.9 2.6-1.9l10.3-19.9Z" style="fill-rule:evenodd"/></svg>
         <h3>Desarrollo comercial</h3>
         <p>Te orientamos sobre cómo incorporar nuestros productos y potenciar tus ventas con la marca.</p>
       </div>
@@ -126,17 +137,17 @@
 
     <div class="tool-grid">
       <div class="tool-card">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
         <h3>Catálogo completo</h3>
         <p>Accedé a toda la línea de productos con información detallada de cada opción disponible.</p>
       </div>
       <div class="tool-card">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
         <h3>Combos de primera compra</h3>
         <p>Conocé alternativas pensadas para dar tus primeros pasos con la marca.</p>
       </div>
       <div class="tool-card">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
         <h3>Lista de precios actualizada</h3>
         <p>Recibí la información necesaria para evaluar tu compra y planificar tu propuesta comercial.</p>
       </div>
@@ -149,12 +160,12 @@
     <div class="cta-grid">
       <div class="cta-left">
         <h2>¿Querés sumar Golocan<br>a tu comercio?</h2>
-        <p style="margin-top:-6px;font-size:18px;color:#fff;font-weight:700;font-family:var(--font-display);">Contactate con nuestro equipo de comercial</p>
-        <p>Recibí asesoramiento personalizado para tu negocio. Podés escribirnos por WhatsApp o completar el formulario adjunto.</p>
+        <p style="margin-top:-6px;font-size:18px;color:#fff;font-weight:700;font-family:var(--font-display);">Escribile a nuestro equipo de comercial por whatsapp</p>
+        <p>Recibí asesoramiento personalizado para tu negocio</p>
         <a href="#" class="btn btn-outline">Escribir por WhatsApp</a>
       </div>
       <div class="cta-right">
-        <h2>Dejanos tus datos</h2>
+        <h2>o completá este formulario</h2>
         <form onsubmit="event.preventDefault(); alert('Formulario de demostración — sin envío real.');">
           <div class="field">
             <label for="nombre">Nombre y apellido</label>
@@ -194,6 +205,35 @@
     </div>
   </div>
 </footer>
+
+<script>
+        const menuToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    function cambiarImagen(nuevaRuta) {
+            // Selecciona la imagen por su ID y cambia su atributo 'src'
+            document.getElementById('Imagen330').src = nuevaRuta;
+        }
+
+    function actualizarActivo(botonClickeado) {
+          // 1. Encuentra el contenedor padre de los botones
+          const contenedor = botonClickeado.parentElement;
+          
+          // 2. Quita la clase 'is-active' a todos los botones dentro de ese contenedor
+          const botones = contenedor.querySelectorAll('.size');
+          botones.forEach(btn => btn.classList.remove('is-active'));
+          
+          // 3. Agrega la clase al botón que disparó el evento
+          botonClickeado.classList.add('is-active');
+    }
+
+
+</script>
+
 
 </body>
 </html>

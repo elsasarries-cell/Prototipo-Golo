@@ -37,7 +37,7 @@
 
   .footer-logo img {filter: invert(34%) sepia(96%) saturate(7465%) hue-rotate(358deg) brightness(87%) contrast(106%);}
 
-  @media (max-width:980px){.page-head{padding: 18px 20px 10px;} .grid-products{grid-template-columns:repeat(2,1fr);} .productbutton {margin-bottom: 15px;}}
+  @media (max-width:980px){.page-head{padding: 18px 20px 10px;} .grid-products{grid-template-columns:repeat(2,1fr);} .productbutton, {margin-bottom: 15px;}}
   @media (max-width:560px){.grid-products{grid-template-columns:1fr;}}
 </style>
 </head>
@@ -50,7 +50,7 @@
     </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="productos.html" class="active">Productos</a></li>
+        <li><a href="productos.html">Productos</a></li>
         <li><a href="vende-golocan.html">Venta Mayorista</a></li>
         <li><a href="donde-comprar.html">¿Dónde comprar?</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -72,12 +72,12 @@
   <h1>Una propuesta completa<br>para tus peluditos</h1>
   <p>De los snacks a los alimentos balanceados, todo nuestro catálogo desarrollado bajo un mismo compromiso: innovación, calidad, pasión y amor por perros y gatos.</p>
   <div class="filters">
-    <a href="javascript:void(0)" class="tag-pill is-active" data-categoria="todos" onclick="filtrar('todos', this)">Todos los productos</a>
-    <a href="javascript:void(0)" class="tag-pill" data-categoria="bocaditos" onclick="filtrar('bocaditos', this)">Bocaditos</a>
-    <a href="javascript:void(0)" class="tag-pill" data-categoria="horneados" onclick="filtrar('horneados', this)">Horneados</a>
-    <a href="javascript:void(0)" class="tag-pill" data-categoria="saludables" onclick="filtrar('saludables', this)">Saludables</a>
-    <a href="javascript:void(0)" class="tag-pill" data-categoria="funcionales" onclick="filtrar('funcionales', this)">Funcionales</a>
-    <a href="javascript:void(0)" class="tag-pill" data-categoria="deshidratado" onclick="filtrar('deshidratado', this)">Deshidratados</a>
+    <a href="productos.html" class="tag-pill is-active">Todos los productos</a>
+    <a href="bocaditos.html" class="tag-pill">Bocaditos</a>
+    <a href="horneados.html" class="tag-pill">Horneados</a>
+    <a href="saludables.html" class="tag-pill">Saludables</a>
+    <a href="funcionales.html" class="tag-pill">Funcionales</a>
+    <a href="deshidratados.html" class="tag-pill">Deshidratados</a>
   </div>
 </section>
 
@@ -85,7 +85,7 @@
   <div class="wrap">
     <div class="grid-products">
 
-      <div class="pcard bocaditos">
+      <div class="pcard">
         <a href="producto-detalle.html">
           <div class="media-ph"><img id="Imagen330" src="img/330.png"></div>
         </a>
@@ -97,7 +97,7 @@
         <span class="btn btn-primary btn-sm"> <a href="producto-detalle.html">Más información</a></span>
       </div>
 
-      <div class="pcard bocaditos">
+      <div class="pcard">
         <a href="producto-detalle.html">
         <div class="media-ph"><img id="Imagen340" src="img/340.png"></div>
         </a>
@@ -109,7 +109,7 @@
         <span class="btn btn-primary btn-sm"><a href="producto-detalle.html">Más información</a></span>
       </div>
 
-      <div class="pcard bocaditos">
+      <div class="pcard">
         <a href="producto-detalle.html">
         <div class="media-ph"><img id="Imagen350" src="img/350.png"></div>
         </a>
@@ -121,7 +121,7 @@
         <span class="btn btn-primary btn-sm"> <a href="producto-detalle.html">Más información</a></span>
       </div>
 
-      <div class="pcard bocaditos">
+      <div class="pcard">
         <a href="producto-detalle.html">
         <div class="media-ph"><img id="Imagen360" src="img/360.png"></div>
         </a>
@@ -134,26 +134,26 @@
         <span class="btn btn-primary btn-sm"> <a href="producto-detalle.html">Más información</a></span>
       </div>
 
-      <a href="producto-detalle.html" class="pcard horneados">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/440.png"></div>
         <button class="productbutton is-active">80gr</button>
         <div class="pname">Palitos de Pollo</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <div class="pcard horneados">
+      <div class="pcard">
         <a href="producto-detalle.html">
         <div class="media-ph"><img id="Imagen630" src="img/630.png"></div>
         </a>
         <div>
           <button class="productbutton is-active" onclick="cambiarImagen630('img/630.png'); actualizarActivo(this)">100gr</button>
-          <button class="productbutton" onclick="cambiarImagen630('img/630-D.png')">500gr</button>
+          <button class="productbutton" onclick="cambiarImagen630('img/630-D.png'); actualizarActivo(this)">500gr</button>
         </div>
         <div class="pname">Huesitos con chips de carne</div>
         <span class="btn btn-primary btn-sm"> <a href="producto-detalle.html">Más información</a></span>
       </div>
 
-      <div class="pcard horneados">
+      <div class="pcard">
         <a href="producto-detalle.html">
         <div class="media-ph"><img id="Imagen610" src="img/610.png"></div>
         </a>
@@ -165,56 +165,56 @@
         <span class="btn btn-primary btn-sm"> <a href="producto-detalle.html">Más información</a></span>
       </div>
 
-      <a href="producto-detalle.html" class="pcard funcionales">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/730.png"></div>
         <button class="productbutton is-active">180gr</button>
         <div class="pname">Training Snacks</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <a href="producto-detalle.html" class="pcard deshidratado">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/830.png"></div>
         <button class="productbutton is-active">65gr</button>        
         <div class="pname">Chips de esófago deshidratado</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <a href="producto-detalle.html" class="pcard funcionales">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/710.png"></div>
         <button class="productbutton is-active">200gr</button>
         <div class="pname">Dental Care Mordida Mediana / Grande</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <a href="producto-detalle.html" class="pcard funcionales">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/720.png"></div>
         <button class="productbutton is-active">144gr</button>
         <div class="pname">Dental Care Mordida Chica x 144gr</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <a href="producto-detalle.html" class="pcard saludables">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/380.png"></div>
         <button class="productbutton is-active">100gr</button>
         <div class="pname">Mini Bocaditos Bajo en grasas</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <a href="producto-detalle.html" class="pcard saludables">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/390.png"></div>
         <button class="productbutton is-active">100gr</button>
         <div class="pname">Mini Bocaditos Sin Sal agregada</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <a href="producto-detalle.html" class="pcard bocaditos">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/1030.png"></div>
         <button class="productbutton is-active">2 kg</button>
         <div class="pname">Bocaditos sabor Carne</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <a href="producto-detalle.html" class="pcard bocaditos">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/1040.png"></div>
         <button class="productbutton is-active">2 kg</button>
         <div class="pname">Bocaditos sabor Pollo</div>
@@ -227,14 +227,14 @@
         <span class="btn btn-primary btn-sm">Más información</span>
       </a> -->
 
-      <a href="producto-detalle.html" class="pcard bocaditos">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/235.png"></div>
         <button class="productbutton is-active">45gr</button>
         <div class="pname">Bocaditos de la Granja</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
-      <a href="producto-detalle.html" class="pcard bocaditos">
+      <a href="producto-detalle.html" class="pcard">
         <div class="media-ph"><img src="img/236.png"></div>
         <button class="productbutton is-active">45gr</button>
         <div class="pname">Bocaditos del Mar</div>
@@ -336,76 +336,6 @@
           // 3. Agrega la clase al botón que disparó el evento
           botonClickeado.classList.add('is-active');
     }
-
-        function filtrar(categoria, btnEl) {
-            // Guarda la categoría elegida para poder restaurarla al volver a esta página
-            sessionStorage.setItem('categoriaProductos', categoria);
-
-            // Refleja la categoría elegida en la URL, sin recargar la página
-            const url = new URL(window.location.href);
-            if (categoria === 'todos') {
-                url.searchParams.delete('categoria');
-            } else {
-                url.searchParams.set('categoria', categoria);
-            }
-            history.replaceState(null, '', url);
-
-            marcarPillActivo(categoria);
-            aplicarFiltro(categoria);
-        }
-
-        function marcarPillActivo(categoria) {
-            let botones = document.querySelectorAll('.tag-pill');
-            botones.forEach(btn => btn.classList.remove('is-active'));
-            const pillActivo = document.querySelector('.tag-pill[data-categoria="' + categoria + '"]');
-            if (pillActivo) {
-                pillActivo.classList.add('is-active');
-            }
-        }
-
-        function aplicarFiltro(categoria) {
-            // Filtrado de elementos
-            let elementos = document.querySelectorAll('.pcard');
-            elementos.forEach(el => {
-                if (categoria === 'todos' || el.classList.contains(categoria)) {
-                    el.classList.remove('oculto');
-                } else {
-                    el.classList.add('oculto');
-                }
-            });
-        }
-
-        function restaurarFiltroGuardado() {
-            // 1) Si la URL trae un parámetro de categoría (por ejemplo, al entrar
-            //    desde una card de categoría del index), ese filtro tiene prioridad.
-            const params = new URLSearchParams(window.location.search);
-            const categoriaURL = params.get('categoria');
-
-            if (categoriaURL) {
-                sessionStorage.setItem('categoriaProductos', categoriaURL);
-                marcarPillActivo(categoriaURL);
-                aplicarFiltro(categoriaURL);
-                return;
-            }
-
-            // 2) Si no hay parámetro en la URL, solo restauramos el filtro guardado
-            //    cuando volvemos desde la página de detalle de un producto
-            //    (por ejemplo, con el breadcrumb). Si se entra a Productos desde
-            //    cualquier otro lado (menú, inicio, link directo), se muestran todos.
-            const vieneDeDetalle = document.referrer.includes('producto-detalle.html');
-            const categoriaGuardada = vieneDeDetalle
-                ? (sessionStorage.getItem('categoriaProductos') || 'todos')
-                : 'todos';
-
-            if (!vieneDeDetalle) {
-                sessionStorage.removeItem('categoriaProductos');
-            }
-
-            marcarPillActivo(categoriaGuardada);
-            aplicarFiltro(categoriaGuardada);
-        }
-
-        restaurarFiltroGuardado();
 
 
 

@@ -6,10 +6,10 @@
 <title>¿Dónde comprar? | Golocan®</title>
 <link rel="stylesheet" href="styles.css">
 <style>
-  .dc-top{text-align:center;padding:30px 0 0;}
+  .dc-top{text-align:center;padding:30px 15px 40px;}
   .dc-top .media-ph{max-width: 60%;margin:0 auto 30px; background: #fff;}
   .dc-top h1{font-size:34px;}
-  .dc-top p{max-width:600px;margin:16px auto 0;font-size:16px;}
+  .dc-top p{max-width:600px;margin:16px auto 0;font-size:1.1rem;}
 
   .choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:42px;}
   .choice-card{border-radius:var(--radius-md);padding:34px 34px;display:flex;gap:18px;align-items:flex-start;}
@@ -22,36 +22,37 @@
   .choice-card.solid .ico{background:rgba(255,255,255,.18);color:#fff;}
   .choice-card h3{font-size:19px;margin-bottom:8px;}
   .choice-card.solid h3{color:#fff;}
-  .choice-card p{font-size:14.5px;}
+  .choice-card p{font-size:1.1rem;}
   .choice-card.solid p{color:#FBD9D7;}
 
-  .map-block{display:grid;grid-template-columns:300px 1fr;gap:30px;margin-top:34px;}
-  .map-search{
-    border:1.5px solid var(--line);border-radius:14px;padding:14px 16px;
-    display:flex;align-items:center;gap:10px;font-size:14px;color:var(--slate-soft);margin-bottom:14px;
-  }
-  .map-near{font-size:13.5px;color:var(--red-600);font-weight:700;display:flex;align-items:center;gap:6px;}
-  .map-canvas{
-    height:380px;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--line);
-    background:linear-gradient(135deg,#cfeee3,#a9d8e8);position:relative;
-  }
-  .map-canvas .map-label{
-    position:absolute;bottom:14px;left:16px;background:#fff;border-radius:10px;
-    padding:6px 12px;font-size:12px;font-weight:700;color:var(--slate);box-shadow:var(--shadow-sm);
-  }
+  .map-block{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px;}
 
   .channels-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:38px;}
   .channel-card{
     border:1px solid var(--line);border-radius:var(--radius-md);padding:34px 20px;
     display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;
-    box-shadow:var(--shadow-sm); background: #fff;
+    box-shadow:var(--shadow-sm); background: #fff; justify-content:space-between;
   }
   .channel-card.official{background:var(--red-600);color:#fff;border-color:var(--red-600);}
   .channel-card .brand{font-family:var(--font-display);font-weight:800;font-size:18px;}
   .channel-card .brand.tienda{font-size:21px;}
-  .channel-card .domain{font-size:12.5px;color:var(--slate-soft);}
+  .channel-card .domain{font-size:1rem;color:var(--slate-soft);}
   .channel-card.official .domain{color:#FBD9D7;}
-  .channel-card.official .tag{font-size:11px;letter-spacing:.5px;font-weight:700;color:#FBD9D7;}
+  .channel-card.official .tag{font-size:1rem;letter-spacing:.5px;font-weight:700;color:#FBD9D7;}
+
+  .countries{display:flex;flex-direction:column;gap:10px;}
+  .country-row{
+    display:flex;justify-content:space-between;align-items:center;
+    padding:16px 22px;border-radius:14px;font-weight:700;font-size:1.1rem;
+  }
+  .country-row .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:10px;}
+  .country-row.main{background:var(--red-600);color:#fff;}
+  .country-row.main .dot{background:#fff;}
+  .country-row:not(.main){background:var(--red-50);color:var(--ink);}
+  .country-row:not(.main) .dot{background:var(--red-600);}
+  .country-row span.tag{font-weight:600;font-size:1.1rem;opacity:.85;}
+  .media-ph .mapa {max-width: 70%; justify-content: center; align-items: center;}
+
 
   .footer-logo img {filter: invert(34%) sepia(96%) saturate(7465%) hue-rotate(358deg) brightness(87%) contrast(106%);}
 
@@ -76,11 +77,11 @@
     <nav class="main-nav">
       <ul>
         <li><a href="productos.html">Productos</a></li>
-        <li><a href="vende-golocan.html">Vendé Golocan</a></li>
+        <li><a href="vende-golocan.html">Venta Mayorista</a></li>
         <li><a href="donde-comprar.html" class="active">¿Dónde comprar?</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="contactanos.html">Contactanos</a></li>
-        <li><a href="#">Nuestra tienda</a></li>
+        <li><a href="#">Venta Minorista</a></li>
       </ul>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú">
@@ -104,7 +105,7 @@
       <div >
         <a href="#map">
         <h3>Tiendas físicas</h3>
-        <p>Buscá puntos de venta para comprar de manera presencial cerca de tu zona.</p>
+        <p>Conseguí Golocan en pet shops y veterinarias de todo el país, también encontranos Uruguay, Paraguay, Perú y Ecuador.</p>
         </a>
       </div>
     </div>
@@ -120,30 +121,6 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section-head center" id="map">
-      <h2 class="section-title center">Mirá dónde podés conseguir<br>Golocan cerca tuyo</h2>
-      <p class="section-sub center">Usá el mapa para ubicar puntos de venta físicos y acercarte al local que te quede más cómodo.</p>
-    </div>
-
-    <div class="map-block">
-      <div>
-        <div class="map-search">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-          Código postal o ciudad
-        </div>
-        <span class="map-near">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-7.4-7-12a7 7 0 1114 0c0 4.6-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          Encontrar tiendas cerca de mi ubicación
-        </span>
-      </div>
-      <div class="map-canvas">
-        <span class="map-label">Mapa · puntos de venta en Argentina y la región</span>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section bg-cream">
   <div class="wrap" id="online">
@@ -155,11 +132,11 @@
     <div class="channels-grid">
       <div class="channel-card official">
         <img src="img/golocan.png">
-        <span class="tag">TIENDA OFICIAL</span>
+        <span class="tag">Tienda Oficial</span>
       </div>
       <div class="channel-card">
         <img src="img/ML.png">
-        <span class="domain">mercadolibre.com.ar</span>
+        <span class="domain">Tienda oficial Golocan</span>
       </div>
       <div class="channel-card">
         <img src="img/puppis.png">
@@ -193,6 +170,28 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="wrap">
+    <div class="section-head center" id="map">
+      <h2 class="section-title center">Golocan siempre cerca tuyo</h2>
+    </div>
+
+    <div class="map-block">
+      <div class="media-ph"><img class="mapa" src="img/mapa.png"></div>
+    <div>
+      <p class="section-sub mt-32" style="margin-top:14px;margin-bottom:28px;">Desde nuestra planta productiva continuamos desarrollando productos para todo el país y expandiendo nuestra presencia en distintos mercados de Latinoamérica.</p>
+      <div class="countries">
+        <div class="country-row main"><span><span class="dot"></span>Argentina</span><span class="tag">Planta productiva</span></div>
+        <div class="country-row"><span><span class="dot"></span>Uruguay</span><span class="tag">Distribución</span></div>
+        <div class="country-row"><span><span class="dot"></span>Paraguay</span><span class="tag">Distribución</span></div>
+        <div class="country-row"><span><span class="dot"></span>Perú</span><span class="tag">Distribución</span></div>
+        <div class="country-row"><span><span class="dot"></span>Ecuador</span><span class="tag">Distribución</span></div>
+      </div>
+  </div>
+</section>
+
+<div class="footer-bar"></div>
+
 <footer class="site-footer" id="footer">
   <div class="wrap footer-row">
     <a href="index.html" class="footer-logo"><img src="img/logo.svg" color=#000 height="50px;"></a>
@@ -208,6 +207,17 @@
     </div>
   </div>
 </footer>
+
+<script>
+  const menuToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.main-nav');
+
+  menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+  });
+
+
+</script>
 
 </body>
 </html>

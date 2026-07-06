@@ -6,34 +6,45 @@
 <title>Bocadito Carne, Pollo y Chocolate x 100g | Golocan®</title>
 <link rel="stylesheet" href="styles.css">
 <style>
-  .pd-top{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;padding:46px 0 70px;}
+  .pd-top{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:25px 32px 70px;}
   .pd-top h1{font-size:38px;}
   .pd-top .desc{font-size:18px;margin:22px 0 30px;}
   .pd-media .media-ph{height:420px; background: #fff;}
+  .pd-media .media-ph img{max-height: 100% }
+  .size{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    font-family:var(--font-display);font-weight:600;font-size:1.1rem;
+    padding:13px 26px;border-radius:var(--radius-pill);
+    border:2px solid var(--red-600); transition:.18s ease;white-space:nowrap; background:#fff;color:var(--red-600);
+    margin-bottom: 20px;
+  }
 
-  .pd-grid{display:grid;grid-template-columns:1fr .85fr .85fr;gap:30px;align-items:start;}
-  .ingredients h2,.compo h2,.guide h2{font-size:24px;color:var(--red-600);margin-bottom:20px;}
-  .ingredients p{font-size:15.5px;color:var(--slate);}
+  .size.is-active {background: var(--red-600); color: #fff;}
+
+
+  .pd-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;align-items:start;}
+  .ingredients h2,.compo h2,.guide h2{font-size:30px;color:var(--red-600);margin-bottom:20px;}
+  .ingredients p{font-size:1.1rem;color:var(--slate);}
 
   .compo{border:2px solid var(--red-600);border-radius:var(--radius-md);overflow:hidden;padding:0;}
-  .compo-head{background:var(--red-600);color:#fff;padding:18px 24px;font-family:var(--font-display);font-weight:700;font-size:19px;}
+  .compo-head{background:var(--red-600);color:#fff;padding:18px 24px;font-family:var(--font-display);font-weight:700;font-size:24px;}
   .compo-body{padding:6px 24px 22px;}
-  .compo-row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px;}
+  .compo-row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:1.1rem;}
   .compo-row:last-child{border-bottom:0;}
   .compo-row b{font-weight:700;}
   .compo-row .val{font-weight:800;}
-  .compo-foot{font-size:12.5px;color:var(--slate-soft);margin-top:14px;}
+  .compo-foot{font-size:1rem;color:var(--slate-soft);margin-top:14px;}
 
   .guide-row{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line);}
   .guide-row:last-child{border-bottom:0;}
   .guide-row svg{flex-shrink:0;color:var(--red-600);margin-top:2px;}
-  .guide-row p{font-size:14.5px;color:var(--ink);}
+  .guide-row p{font-size:1rem;color:var(--ink);}
   .guide-row b{font-weight:800;}
 
   .footer-logo img {filter: invert(34%) sepia(96%) saturate(7465%) hue-rotate(358deg) brightness(87%) contrast(106%);}
 
   @media (max-width:980px){
-    .pd-top{grid-template-columns:1fr;}
+    .pd-top{grid-template-columns:1fr; text-align: center; align-items: center; justify-content: center;}
     .pd-grid{grid-template-columns:1fr;}
   }
 </style>
@@ -47,12 +58,12 @@
     </a>
     <nav class="main-nav">
       <ul>
-        <li><a href="productos.html" class="active">Productos</a></li>
-        <li><a href="vende-golocan.html">Vendé Golocan</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="vende-golocan.html">Venta Mayorista</a></li>
         <li><a href="donde-comprar.html">¿Dónde comprar?</a></li>
         <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="contactanos.html">Contactanos</a></li>
-        <li><a href="#">Nuestra tienda</a></li>
+        <li><a href="#">Venta Minorista</a></li>
       </ul>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú">
@@ -65,19 +76,23 @@
   <div class="breadcrumb">
     <a href="index.html">Inicio</a><span class="sep">&gt;</span>
     <a href="productos.html">Productos</a><span class="sep">&gt;</span>
-    <a href="productos.html">Snacks Golocan</a><span class="sep">&gt;</span>
-    <span class="current">Bocaditos Carne, Pollo y Chocolate x 100gr</span>
+    <a href="productos.html?categoria=bocaditos">Bocaditos</a><span class="sep">&gt;</span>
+    <span class="current">Bocaditos Carne, Pollo y Chocolate</span>
   </div>
 </div>
 
 <section class="wrap pd-top">
   <div>
-    <h1>Bocadito Carne, Pollo<br>y Chocolate x 100g.</h1>
+    <h1>Bocadito Carne, Pollo<br>y Chocolate</h1>
     <p class="desc">Deliciosos bocaditos blandos y semihúmedos con sabor a Carne, Pollo y Chocolate.</p>
+    <div>
+      <button class="size is-active" onclick="cambiarImagen('img/330-gr.png'); actualizarActivo(this)">100gr</button>
+      <button class="size" onclick="cambiarImagen('img/330-D-gr.png'); actualizarActivo(this)">500gr</button>
+    </div>
     <a href="donde-comprar.html" class="btn btn-primary">¿Dónde comprar?</a>
   </div>
   <div class="pd-media">
-    <div class="media-ph"><img src="img/330-gr.png">></div>
+    <div class="media-ph"><img id="Imagen330" src="img/330-gr.png">></div>
   </div>
 </section>
 
@@ -130,6 +145,8 @@
   </div>
 </section>
 
+<div class="footer-bar"></div>
+
 <footer class="site-footer" id="footer" style="border-top:1px solid var(--line);">
   <div class="wrap footer-row">
     <a href="index.html" class="footer-logo"><img src="img/logo.svg" color=#000 height="50px;"></a>
@@ -145,6 +162,34 @@
     </div>
   </div>
 </footer>
+
+<script>
+        const menuToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    function cambiarImagen(nuevaRuta) {
+            // Selecciona la imagen por su ID y cambia su atributo 'src'
+            document.getElementById('Imagen330').src = nuevaRuta;
+        }
+
+    function actualizarActivo(botonClickeado) {
+          // 1. Encuentra el contenedor padre de los botones
+          const contenedor = botonClickeado.parentElement;
+          
+          // 2. Quita la clase 'is-active' a todos los botones dentro de ese contenedor
+          const botones = contenedor.querySelectorAll('.size');
+          botones.forEach(btn => btn.classList.remove('is-active'));
+          
+          // 3. Agrega la clase al botón que disparó el evento
+          botonClickeado.classList.add('is-active');
+    }
+
+
+  </script>
 
 </body>
 </html>
