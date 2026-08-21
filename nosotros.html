@@ -11,32 +11,19 @@
   .row.reverse{direction:rtl;}
   .row.reverse > *{direction:ltr;}
 
-  .diff-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:42px;}
+  .diff-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:42px;}
   .diff-card{border:1px solid var(--line);border-radius:var(--radius-md);padding:30px 24px;text-align:left;box-shadow:var(--shadow-sm);}
   .diff-card .big{font-family:var(--font-display);font-weight:800;font-size:32px;color:var(--red-600);}
   .diff-card .ico{color:var(--red-600);margin-bottom:8px;}
-  .diff-card h3{font-size:16px;margin:10px 0 8px;}
+  .diff-card h3{font-size:1.5rem;margin:10px 0 8px;}
   .diff-card p{font-size:1rem;}
 
   .family-band{background:var(--red-600);color:#fff;text-align:center;padding:70px 0;}
-  .family-band h2{color:#fff;font-size:32px;}
-  .family-band p{color:#FBD9D7;max-width:680px;margin:18px auto 36px;}
+  .family-band h2{color:#fff;font-size:32px; margin:36px auto 0; }
+  .family-band p{color:#fff;max-width:680px;margin:0 auto 36px; font-size: 1.3rem}
   .family-band .media-ph{height:300px;background:rgba(255,255,255,.12);}
   .family-band .media-ph span{color:#fff;}
 
-  .countries{display:flex;flex-direction:column;gap:10px;}
-  .country-row{
-    display:flex;justify-content:space-between;align-items:center;
-    padding:16px 22px;border-radius:14px;font-weight:700;font-size:15px;
-  }
-  .country-row .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:10px;}
-  .country-row.main{background:var(--red-600);color:#fff;}
-  .country-row.main .dot{background:#fff;}
-  .country-row:not(.main){background:var(--red-50);color:var(--ink);}
-  .country-row:not(.main) .dot{background:var(--red-600);}
-  .country-row span.tag{font-weight:600;font-size:1rem;opacity:.85;}
-
-  .final-ctas{display:flex;justify-content:center;gap:16px;margin-top:50px;}
 
   .footer-logo img {filter: invert(34%) sepia(96%) saturate(7465%) hue-rotate(358deg) brightness(87%) contrast(106%);}
 
@@ -78,96 +65,60 @@
 <section class="section">
   <div class="wrap row">
     <div>
-      <span class="eyebrow">Desde 1994</span>
-      <h1 class="section-title" style="font-size:32px;">Más de 30 años creando productos que los peluditos disfrutan</h1>
-      <p class="section-sub">Desde 1994 desarrollamos snacks y alimentos para perros y gatos con una convicción que sigue intacta: combinar innovación, calidad y pasión por lo que hacemos.</p>
+      <span class="eyebrow">Quiénes Somos</span>
+      <h1 class="section-title" style="font-size:40px;">Golocan: Pasión por innovar, compromiso de familia.</h1>
+      <p class="section-sub">Desde 1994, entendemos que el vínculo con un perro o un gato es uno de los afectos más genuinos que existen. Por eso, desde hace más de 30 años, trabajamos con el corazón puesto en fortalecer ese lazo a través de lo que mejor sabemos hacer: los snacks que ellos más aman. </p>
+      <p class="section-sub"> Somos una empresa familiar argentina pionera en la categoría. Creemos en los vínculos humanos, simples y transparentes: nos gusta que nuestros clientes, veterinarias y distribuidores sepan exactamente quiénes estamos del otro lado, construyendo relaciones comerciales de confianza a largo plazo.</p>
     </div>
-    <div class="media-ph"><span>Foto · planta / equipo Golocan</span></div>
+    <div class="media-ph"><img src="img/"></div>
   </div>
 </section>
 
 <section class="section bg-cream">
   <div class="wrap">
-    <h2 class="section-title center">¿Qué nos diferencia?</h2>
+    <h2 class="section-title center">¿Por qué elegirnos como aliados comerciales?</h2>
     <div class="diff-grid">
       <div class="diff-card">
-        <div class="big">+30</div>
-        <h3>Más de 30 años de experiencia</h3>
-        <p>Tres décadas desarrollando productos y acompañando el crecimiento del mercado de mascotas.</p>
+      	<span class="ico"> 
+      		<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 640 640" fill="currentColor"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M298.5 156.9C312.8 199.8 298.2 243.1 265.9 253.7C233.6 264.3 195.8 238.1 181.5 195.2C167.2 152.3 181.8 109 214.1 98.4C246.4 87.8 284.2 114 298.5 156.9zM164.4 262.6C183.3 295 178.7 332.7 154.2 346.7C129.7 360.7 94.5 345.8 75.7 313.4C56.9 281 61.4 243.3 85.9 229.3C110.4 215.3 145.6 230.2 164.4 262.6zM133.2 465.2C185.6 323.9 278.7 288 320 288C361.3 288 454.4 323.9 506.8 465.2C510.4 474.9 512 485.3 512 495.7L512 497.3C512 523.1 491.1 544 465.3 544C453.8 544 442.4 542.6 431.3 539.8L343.3 517.8C328 514 312 514 296.7 517.8L208.7 539.8C197.6 542.6 186.2 544 174.7 544C148.9 544 128 523.1 128 497.3L128 495.7C128 485.3 129.6 474.9 133.2 465.2zM485.8 346.7C461.3 332.7 456.7 295 475.6 262.6C494.5 230.2 529.6 215.3 554.1 229.3C578.6 243.3 583.2 281 564.3 313.4C545.4 345.8 510.3 360.7 485.8 346.7zM374.1 253.7C341.8 243.1 327.2 199.8 341.5 156.9C355.8 114 393.6 87.8 425.9 98.4C458.2 109 472.8 152.3 458.5 195.2C444.2 238.1 406.4 264.3 374.1 253.7z"/></svg>
+      	</span>
+      	<h3>Preferencia real y rotación</h3>
+        <p>Combinamos sabor irresistible y alta palatabilidad. Somos el sonido del paquete que las mascotas reconocen al instante y el premio que los tutores eligen una y otra vez en el mostrador.</p>
       </div>
       <div class="diff-card">
-        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 7c2 2 5 2 7 0s5-2 7 0M5 17c2-2 5-2 7 0s5 2 7 0"/></svg></span>
-        <h3>ADN innovador</h3>
-        <p>Creamos productos que marcaron tendencias y seguimos apostando al desarrollo constante.</p>
+        <span class="ico"> 
+        	<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 640 640" fill="currentColor"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M424.5 355.1C449 329.2 464 294.4 464 256C464 176.5 399.5 112 320 112C240.5 112 176 176.5 176 256C176 294.4 191 329.2 215.5 355.1C236.8 377.5 260.4 409.1 268.8 448L371.2 448C379.6 409 403.2 377.5 424.5 355.1zM459.3 388.1C435.7 413 416 443.4 416 477.7L416 496C416 540.2 380.2 576 336 576L304 576C259.8 576 224 540.2 224 496L224 477.7C224 443.4 204.3 413 180.7 388.1C148 353.7 128 307.2 128 256C128 150 214 64 320 64C426 64 512 150 512 256C512 307.2 492 353.7 459.3 388.1zM272 248C272 261.3 261.3 272 248 272C234.7 272 224 261.3 224 248C224 199.4 263.4 160 312 160C325.3 160 336 170.7 336 184C336 197.3 325.3 208 312 208C289.9 208 272 225.9 272 248z"/></svg>
+        </span>
+        <h3>Evolución e innovación continua</h3>
+        <p>Fuimos pioneros y seguimos marcando tendencia. Desarrollamos snacks saludables, funcionales, deshidratados y nuevas líneas orientadas al cuidado específico de la salud y el bienestar animal.</p>
       </div>
       <div class="diff-card">
-        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 10-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 000-7.8z"/></svg></span>
-        <h3>Elegidos por los peluditos</h3>
-        <p>Desarrollamos productos de alta aceptación que combinan sabor y calidad.</p>
+        <span class="ico">
+        	<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 640 640" fill="currentColor"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M598.1 139.4C608.8 131.6 611.2 116.6 603.4 105.9C595.6 95.2 580.6 92.8 569.9 100.6L495.4 154.8L485.5 148.2C465.8 135 442.6 128 418.9 128L359.7 128L359.3 128L215.7 128C189 128 163.2 136.9 142.3 153.1L70.1 100.6C59.4 92.8 44.4 95.2 36.6 105.9C28.8 116.6 31.2 131.6 41.9 139.4L129.9 203.4C139.5 210.3 152.6 209.3 161 201L164.9 197.1C178.4 183.6 196.7 176 215.8 176L262.1 176L170.4 267.7C154.8 283.3 154.8 308.6 170.4 324.3L171.2 325.1C218 372 294 372 340.9 325.1L368 298L465.8 395.8C481.4 411.4 481.4 436.7 465.8 452.4L456 462.2L425 431.2C415.6 421.8 400.4 421.8 391.1 431.2C381.8 440.6 381.7 455.8 391.1 465.1L419.1 493.1C401.6 503.5 381.9 509.8 361.5 511.6L313 463C303.6 453.6 288.4 453.6 279.1 463C269.8 472.4 269.7 487.6 279.1 496.9L294.1 511.9L290.3 511.9C254.2 511.9 219.6 497.6 194.1 472.1L65 343C55.6 333.6 40.4 333.6 31.1 343C21.8 352.4 21.7 367.6 31.1 376.9L160.2 506.1C194.7 540.6 241.5 560 290.3 560L342.1 560L343.1 561L344.1 560L349.8 560C398.6 560 445.4 540.6 479.9 506.1L499.8 486.2C501 485 502.1 483.9 503.2 482.7C503.9 482.2 504.5 481.6 505.1 481L609 377C618.4 367.6 618.4 352.4 609 343.1C599.6 333.8 584.4 333.7 575.1 343.1L521.3 396.9C517.1 384.1 510 372 499.8 361.8L385 247C375.6 237.6 360.4 237.6 351.1 247L307 291.1C280.5 317.6 238.5 319.1 210.3 295.7L309 197C322.4 183.6 340.6 176 359.6 175.9L368.1 175.9L368.3 175.9L419.1 175.9C433.3 175.9 447.2 180.1 459 188L482.7 204C491.1 209.6 502 209.3 510.1 203.4L598.1 139.4z"/></svg>
+        </span>
+        <h3>Cercanía y solidez comercial</h3>
+        <p>Acompañamos a nuestra red de pet shops, veterinarias y mayoristas con atención directa, reglas claras y una visión compartida de crecimiento.</p>
       </div>
       <div class="diff-card">
-        <span class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 21v-1a6 6 0 016-6h2a6 6 0 016 6v1M16 14a6 6 0 016 6v1"/></svg></span>
-        <h3>Relaciones a largo plazo</h3>
-        <p>Construimos vínculos transparentes y sostenibles con clientes y socios comerciales.</p>
+        <span class="ico">
+        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="40" height="40" fill="currentColor" stroke="currentColor" stroke-width="2"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320.1 32C329.1 32 337.4 37.1 341.5 45.1L415 189.3L574.9 214.7C583.8 216.1 591.2 222.4 594 231C596.8 239.6 594.5 249 588.2 255.4L473.7 369.9L499 529.8C500.4 538.7 496.7 547.7 489.4 553C482.1 558.3 472.4 559.1 464.4 555L320.1 481.6L175.8 555C167.8 559.1 158.1 558.3 150.8 553C143.5 547.7 139.8 538.8 141.2 529.8L166.4 369.9L52 255.4C45.6 249 43.4 239.6 46.2 231C49 222.4 56.3 216.1 65.3 214.7L225.2 189.3L298.8 45.1C302.9 37.1 311.2 32 320.2 32zM320.1 108.8L262.3 222C258.8 228.8 252.3 233.6 244.7 234.8L119.2 254.8L209 344.7C214.4 350.1 216.9 357.8 215.7 365.4L195.9 490.9L309.2 433.3C316 429.8 324.1 429.8 331 433.3L444.3 490.9L424.5 365.4C423.3 357.8 425.8 350.1 431.2 344.7L521 254.8L395.5 234.8C387.9 233.6 381.4 228.8 377.9 222L320.1 108.8z"/></svg>
+        </span>
+        <h3>Calidad y respaldo productivo</h3>
+        <p>Elaboramos desde nuestra planta propia en Argentina, con estándares rigurosos de calidad y presencia en constante expansión en la región.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap row reverse">
-    <div class="media-ph"><span>Foto · línea de productos</span></div>
-    <div>
-      <span class="eyebrow">Nuestra evolución</span>
-      <h2 class="section-title" style="font-size:28px;">De los snacks a una propuesta integral</h2>
-      <p class="section-sub">A lo largo de nuestra historia ampliamos nuestra oferta para acompañar cada necesidad nutricional de perros y gatos.</p>
-      <p class="section-sub mt-32" style="margin-top:18px;">Con el crecimiento de nuestras marcas y la incorporación de nuevas categorías, hoy ofrecemos una propuesta completa que combina snacks y alimentos balanceados desarrollados bajo los mismos estándares de calidad, innovación y compromiso.</p>
     </div>
   </div>
 </section>
 
 <section class="family-band">
   <div class="wrap">
-    <h2>Somos Familia</h2>
-    <p>Golocan nació como una empresa familiar, y la forma de hacer las cosas —cercana, comprometida y de largo plazo— es la misma que llevamos a cada producto, a cada equipo y a cada vínculo que construimos.</p>
-    <div class="media-ph"><span>Foto equipo completo o individuales</span></div>
+    <p>Hacemos los snacks que ellos eligen, con la cercanía y confianza que tu negocio necesita.</p>
+    <!-- <div class="media-ph"><span>Foto equipo completo o individuales</span></div>-->
+    <h2>Golocan. <br> <span style="font-size: 25px;">Somos Familia</span></h2>
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap row">
-    <div>
-      <span class="eyebrow">Nuestra red</span>
-      <h2 class="section-title" style="font-size:28px;">Crecemos junto a quienes confían en nosotros</h2>
-      <p class="section-sub">Trabajamos todos los días para construir relaciones simples, transparentes y duraderas.</p>
-      <p class="section-sub" style="margin-top:14px;">Por eso acompañamos a nuestra red de comercios, distribuidores y veterinarias con atención cercana, soporte comercial y una visión compartida de crecimiento a largo plazo.</p>
-    </div>
-    <div class="media-ph"><span>Foto · equipo comercial</span></div>
-  </div>
-</section>
 
-<!-- <section class="section bg-cream">
-  <div class="wrap row">
-    <div class="media-ph"><span>Foto · mapa regional</span></div>
-    <div>
-      <span class="eyebrow">Presencia regional</span>
-      <h2 class="section-title" style="font-size:28px;">Una empresa argentina con mirada regional</h2>
-      <p class="section-sub mt-32" style="margin-top:14px;margin-bottom:28px;">Desde nuestra planta productiva continuamos desarrollando productos para todo el país y expandiendo nuestra presencia en distintos mercados de Latinoamérica.</p>
-      <div class="countries">
-        <div class="country-row main"><span><span class="dot"></span>Argentina</span><span class="tag">Planta productiva</span></div>
-        <div class="country-row"><span><span class="dot"></span>Uruguay</span><span class="tag">Distribución</span></div>
-        <div class="country-row"><span><span class="dot"></span>Paraguay</span><span class="tag">Distribución</span></div>
-        <div class="country-row"><span><span class="dot"></span>Perú</span><span class="tag">Distribución</span></div>
-        <div class="country-row"><span><span class="dot"></span>Ecuador</span><span class="tag">Distribución</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="final-ctas">
-    <a href="productos.html" class="btn btn-primary">Conocé nuestros productos</a>
-    <a href="vende-golocan.html" class="btn btn-outline-red">Quiero vender Golocan</a>
-  </div>
-</section>  -->
 
 <div class="footer-bar"></div>
 
