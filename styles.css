@@ -12,6 +12,11 @@
   --red-500:#E94E3A;
   --red-50:#FDEDEC;
   --ink:#241F1E;
+  --green-600:#83af9a;
+  --green-50:#F0F5F3;
+  --green-800:#487629;
+  --violet-600:#715091;
+  --violet-50:#EEEAF2;
   --slate:#5B5755;
   --slate-soft:#8A8582;
   --cream:#FFF9F4;
@@ -134,7 +139,7 @@ nav.main-nav a.active::after{
 }
 .section-title{font-size:40px;color:var(--ink);}
 .section-title.center{text-align:center;}
-.section-sub{margin-top:14px;font-size:1.1rem;max-width:680px;}
+.section-sub{margin-top:14px;font-size:1rem;max-width:680px;}
 .section-sub.center{margin-inline:auto;text-align:center;}
 .section-head{margin-bottom:46px;}
 .section-head.center{text-align:center;}
