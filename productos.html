@@ -17,8 +17,9 @@
   .pcard{
     background:#fff;border:1px solid var(--line);border-radius:var(--radius-md);
     padding:20px 20px 24px;display:flex;flex-direction:column;text-align:center;
-    box-shadow:var(--shadow-sm);
+    box-shadow:var(--shadow-sm);transition:.18s ease;
   }
+  .pcard:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
   .pcard .media-ph{height:200px;margin-bottom:18px;border-radius:14px; background: #fff; }
   .pcard .pname{font-size:1.1rem;font-weight:700;color:var(--ink);min-height:40px;margin:14px 0;}
   .pcard .btn{margin-top:auto;}
@@ -77,7 +78,7 @@
     <a href="javascript:void(0)" class="tag-pill" data-categoria="horneados" onclick="filtrar('horneados', this)">Horneados</a>
     <a href="javascript:void(0)" class="tag-pill" data-categoria="saludables" onclick="filtrar('saludables', this)">Saludables</a>
     <a href="javascript:void(0)" class="tag-pill" data-categoria="funcionales" onclick="filtrar('funcionales', this)">Funcionales</a>
-    <a href="javascript:void(0)" class="tag-pill" data-categoria="deshidratado" onclick="filtrar('deshidratado', this)">Deshidratados</a>
+    <a href="deshidratados.html" class="tag-pill" data-categoria="deshidratado" onclick="filtrar('deshidratado', this)">Deshidratados</a>
   </div>
 </section>
 
@@ -134,12 +135,17 @@
         <span class="btn btn-primary btn-sm"> <a href="producto-detalle.html">Más información</a></span>
       </div>
 
-      <a href="producto-detalle.html" class="pcard horneados">
-        <div class="media-ph"><img src="img/440.png"></div>
-        <button class="productbutton is-active">80gr</button>
-        <div class="pname">Palitos de Pollo</div>
-        <span class="btn btn-primary btn-sm">Más información</span>
-      </a>
+      <div class="pcard horneados">
+        <a href="producto-detalle.html">
+        <div class="media-ph"><img id="Imagen440" src="img/440.png"></div>
+        </a>
+        <div>
+          <button class="productbutton is-active" onclick="cambiarImagen440('img/440.png'); actualizarActivo(this)">100gr</button>
+          <button class="productbutton" onclick="cambiarImagen440('img/440-D.png'); actualizarActivo(this)">450gr</button>
+        </div>
+        <div class="pname">Palitos de pollo</div>
+        <span class="btn btn-primary btn-sm"> <a href="producto-detalle.html">Más información</a></span>
+      </div>
 
       <div class="pcard horneados">
         <a href="producto-detalle.html">
@@ -147,7 +153,7 @@
         </a>
         <div>
           <button class="productbutton is-active" onclick="cambiarImagen630('img/630.png'); actualizarActivo(this)">100gr</button>
-          <button class="productbutton" onclick="cambiarImagen630('img/630-D.png')">500gr</button>
+          <button class="productbutton" onclick="cambiarImagen630('img/630-D.png'); actualizarActivo(this)">500gr</button>
         </div>
         <div class="pname">Huesitos con chips de carne</div>
         <span class="btn btn-primary btn-sm"> <a href="producto-detalle.html">Más información</a></span>
@@ -181,15 +187,15 @@
 
       <a href="producto-detalle.html" class="pcard funcionales">
         <div class="media-ph"><img src="img/710.png"></div>
-        <button class="productbutton is-active">200gr</button>
-        <div class="pname">Dental Care Mordida Mediana / Grande</div>
+        <button class="productbutton is-active">144gr</button>
+        <div class="pname">Dental Care Mordida Chica</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
       <a href="producto-detalle.html" class="pcard funcionales">
         <div class="media-ph"><img src="img/720.png"></div>
-        <button class="productbutton is-active">144gr</button>
-        <div class="pname">Dental Care Mordida Chica x 144gr</div>
+        <button class="productbutton is-active">200gr</button>
+        <div class="pname">Dental Care Mordida Mediana / Grande</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
 
@@ -242,7 +248,7 @@
       </a>
 
       <a href="producto-detalle.html" class="pcard">
-        <div class="media-ph"><img src="img/210.png"></div>
+        <div class="media-ph"><img src="img/2010.png"></div>
         <div class="pname">Benefit Cachorros todos los tamaños</div>
         <span class="btn btn-primary btn-sm">Más información</span>
       </a>
@@ -313,6 +319,11 @@
     function cambiarImagen360(nuevaRuta) {
             // Selecciona la imagen por su ID y cambia su atributo 'src'
             document.getElementById('Imagen360').src = nuevaRuta;
+        }
+
+    function cambiarImagen440(nuevaRuta) {
+            // Selecciona la imagen por su ID y cambia su atributo 'src'
+            document.getElementById('Imagen440').src = nuevaRuta;
         }
 
     function cambiarImagen630(nuevaRuta) {

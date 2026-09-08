@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chips de esófago deshidratado | Golocan®</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .pd-top{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:25px 32px 70px;}
+  .pd-top h1{font-size:38px;}
+  .pd-top .desc{font-size:18px;margin:22px 0 30px;}
+  .pd-media .media-ph{height:420px; background: #fff;}
+  .pd-media .media-ph img{max-height: 100% }
+  .size{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    font-family:var(--font-display);font-weight:600;font-size:1.1rem;
+    padding:13px 26px;border-radius:var(--radius-pill);
+    border:2px solid var(--green-600); transition:.18s ease;white-space:nowrap; background:#fff;color:var(--green-600);
+    margin-bottom: 20px;
+  }
+
+  .size.is-active {background: var(--green-600); color: #fff;}
+  .pd-top .btn-primary {background-color: var(--green-800)}
+
+
+  .pd-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;align-items:start;}
+  .ingredients h2,.compo h2,.guide h2, .benefit h2{font-size:30px;color:var(--green-800);margin-bottom:20px;}
+  .ingredients p, .benefit p{font-size:1.1rem;color:var(--slate); margin-bottom: 30px;}
+
+  .compo{border:2px solid var(--green-800);border-radius:var(--radius-md);overflow:hidden;padding:0;}
+  .compo-head{background:var(--green-800);color:#fff;padding:18px 24px;font-family:var(--font-display);font-weight:700;font-size:24px;}
+  .compo-body{padding:6px 24px 22px;}
+  .compo-row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid var(--line);font-size:1.1rem;}
+  .compo-row:last-child{border-bottom:0;}
+  .compo-row b{font-weight:700;}
+  .compo-row .val{font-weight:800;}
+  .compo-foot{font-size:1rem;color:var(--slate-soft);margin-top:14px;}
+
+  .guide-row{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--line);}
+  .guide-row:last-child{border-bottom:0;}
+  .guide-row svg{flex-shrink:0;color:var(--red-600);margin-top:2px;}
+  .guide-row p{font-size:1rem;color:var(--ink);}
+  .guide-row b{font-weight:800;}
+
+  .section-tight.top {background-color: var(--cream)}
+
+  .product-cta{background:var(--green-600);color:#fff;text-align:center;padding:64px 0;}
+  .product-cta h2{color:#fff;font-size:32px;margin:0 auto 14px;}
+  .product-cta p{color:#fff;max-width:520px;margin:0 auto 30px;font-size:1.1rem;}
+
+  .footer-logo img {filter: invert(34%) sepia(96%) saturate(7465%) hue-rotate(358deg) brightness(87%) contrast(106%);}
+
+  @media (max-width:980px){
+    .pd-top{grid-template-columns:1fr; text-align: center; align-items: center; justify-content: center;}
+    .pd-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">
+      <img src="img/logo.svg" height="50px">
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="vende-golocan.html">Venta Mayorista</a></li>
+        <li><a href="donde-comprar.html">¿Dónde comprar?</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contactanos.html">Contactanos</a></li>
+        <li><a href="#">Venta Minorista</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="breadcrumb">
+    <a href="index.html">Inicio</a><span class="sep">&gt;</span>
+    <a href="productos.html">Productos</a><span class="sep">&gt;</span>
+    <a href="deshidratados.html">Deshidratados</a><span class="sep">&gt;</span>
+    <span class="current">Chips de Esófago Deshidratados</span>
+  </div>
+</div>
+
+<section class="wrap pd-top">
+  <div>
+    <h1>Chips de <br>Esófago Deshidratado</h1>
+    <p class="desc">Snack 100% natural y secado a bajas temperaturas de alta palatabilidad. Ideales para complementar la alimentación diaria de forma saludable. Contribuyen a reducir el sarro de los dientes y mantener sus mandíbulas fuertes.</p>
+    <div>
+      <button class="size is-active">65gr</button>
+    </div>
+    <a href="donde-comprar.html" class="btn btn-primary">¿Dónde comprar?</a>
+  </div>
+  <div class="pd-media">
+    <div class="media-ph"><img src="img/830-gr.png"></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap pd-grid">
+    <div>
+      <div class="ingredients">
+        <h2>Ingredientes</h2>
+        <p>Esófago bovino deshidratado</p>
+      </div>
+
+      <div class="compo">
+        <div class="compo-head">Composición centesimal</div>
+        <div class="compo-body">
+          <div class="compo-row"><span>Proteínas</span><span class="val">70%</span></div>
+          <div class="compo-row"><span>Materia grasa</span><span class="val">18%</span></div>
+          <div class="compo-row"><span>Cenizas</span><span class="val">2%</span></div>
+          <div class="compo-row"><span>Humedad</span><span class="val">8%</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="guide">
+      <h2>Guía de alimentación</h2>
+      <p>Este snack está destinado a cachorros mayores de 4 meses y adultos de todas las razas</p>
+      <div class="guide-row">
+        <img src="img/perro-13.svg" width="35">
+        <p>Pequeños, <b>hasta 5 kg</b><br>se recomiendan <b>40 gramos.</b></p>
+      </div>
+      <div class="guide-row">
+        <img src="img/perro-14.svg" width="45">
+        <p>Chicos, <b>de 6 a 10 kg</b><br>se recomiendan de <b>40 a 60 gramos.</b></p>
+      </div>
+      <div class="guide-row">
+        <img src="img/perro-15.svg" width="55">
+        <p>Medianos, <b>de 11 a 20 kg</b><br>se recomiendan de <b>60 a 75 gramos.</b></p>
+      </div>
+      <div class="guide-row">
+        <img src="img/perro-16.svg" width="65">
+        <p>Grandes, <b>de 21 a 40 kg</b><br>se recomiendan de <b>75 a 85 gramos.</b></p>
+      </div>
+      <div class="guide-row">
+        <img src="img/perro-17.svg" width="75">
+        <p>Muy grandes, <b>más de 40 kg</b><br>se recomiendan de <b>85 a 100 gramos.</b></p>
+      </div>
+    </div>
+    <div>
+      <div class="benefit">
+        <h2>Beneficia a la salud osteoarticular</h2>
+        <p>Son altamente digestibles, están repletas de nutrientes naturales que favorecen la salud de las articulaciones (como la condroitina y la glucosamina) y constituyen una alternativa segura y saludable al cuero crudo. <br>
+        <span style="font-weight: 800">Higiene dental:</span> Su textura crujiente elimina la placa y el sarro mientras tu perro mastica. <br>
+        <span style="font-weight: 800">Nutrición: </span> Naturalmente rico en colágeno, cartílago y tejido conectivo, que son fuentes de primera calidad de glucosamina y condroitina. Favorece la salud de articulaciones y huesos.<br>
+        <span style="font-weight: 800">Uso: </span> Es fácil de digerir al ser un músculo orgánico y no piel, es suave para los estómagos sensibles y se metaboliza fácilmente.</p>
+      </div>
+
+  </div>
+</section>
+<section class="section-tight top">
+  <div class="wrap">
+    <h2 class="section-title center" style="padding-bottom: 30px; color: var(--green-800);">Consejos de uso</h2>
+    <div class="pd-grid">
+      <div> 
+        <h2>Supervisión:</h2>
+        <p>Siempre supervisá a tu perro cuando le ofrezcas un snack para masticar para evitar que trague trozos grandes sin masticar y asegurate de que tenga acceso a abundante agua fresca.</p>
+      </div>
+      <div> 
+        <h2>Moderación:</h2>
+        <p>Usalo como un premio o recompensa, no como sustituto de una comida principal.</p>
+      </div>
+      <div> 
+        <h2>Almacenamiento:</h2>
+        <p>Almacenar en un lugar fresco y bien ventilado, lejos de la luz solar.</p>
+      </div>
+    </div>
+    <p>No apto para cachorros menores a 4 meses.</p>
+  </div>
+</section>
+
+<section class="product-cta">
+  <div class="wrap">
+    <h2>Conocé toda nuestra línea de deshidratados</h2>
+    <p>Una forma saludable y natural de premiar, entretener y cuidar la salud de tu peludito.</p>
+    <a href="deshidratados.html" class="btn btn-outline">Ver todos los productos</a>
+  </div>
+</section>
+
+<div class="footer-bar"></div>
+
+<footer class="site-footer" id="footer" style="border-top:1px solid var(--line);">
+  <div class="wrap footer-row">
+    <a href="index.html" class="footer-logo"><img src="img/logo.svg" color=#000 height="50px;"></a>
+    <div class="footer-info">
+      <div class="col"><strong>Dirección</strong>Churruca 9422<br>Loma Hermosa, Bs.As</div>
+      <div class="col"><strong>Contacto</strong>contacto@somosgolocan.com.ar<br>+54 9 11 3427-1784</div>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+      <a href="#" aria-label="YouTube"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23 7.2s-.2-1.6-.9-2.3c-.8-.9-1.8-.9-2.2-1C16.9 3.7 12 3.7 12 3.7s-4.9 0-7.9.2c-.4 0-1.4.1-2.2 1-.7.7-.9 2.3-.9 2.3S0 9 0 10.9v1.9C0 14.7.2 16.5.2 16.5s.2 1.6.9 2.3c.8.9 1.9.8 2.4.9 1.7.2 7.5.2 7.5.2s4.9 0 7.9-.3c.4 0 1.4-.1 2.2-1 .7-.7.9-2.3.9-2.3s.2-1.8.2-3.7V10.9C23.2 9 23 7.2 23 7.2zM9.5 14.6V8.4l6 3.1-6 3.1z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2.7 0 3.1 0 4.1.1 1.1 0 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.2.1 1 .1 1.4.1 4.1s0 3.1-.1 4.1c0 1.1-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.2.4-1 .1-1.4.1-4.1.1s-3.1 0-4.1-.1c-1.1 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.2-.1-1-.1-1.4-.1-4.1s0-3.1.1-4.1c0-1.1.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.2-.4C8.9 2 9.3 2 12 2zm0 1.8c-2.6 0-3 0-4 .1-.9 0-1.4.2-1.7.3-.4.2-.7.3-1 .6-.3.3-.5.6-.6 1-.1.3-.3.8-.3 1.7-.1 1-.1 1.3-.1 4s0 3 .1 4c0 .9.2 1.4.3 1.7.2.4.3.7.6 1 .3.3.6.5 1 .6.3.1.8.3 1.7.3 1 .1 1.3.1 4 .1s3 0 4-.1c.9 0 1.4-.2 1.7-.3.4-.2.7-.3 1-.6.3-.3.5-.6.6-1 .1-.3.3-.8.3-1.7.1-1 .1-1.3.1-4s0-3-.1-4c0-.9-.2-1.4-.3-1.7-.2-.4-.3-.7-.6-1-.3-.3-.6-.5-1-.6-.3-.1-.8-.3-1.7-.3-1-.1-1.3-.1-4-.1zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.8a3.2 3.2 0 1 0 0 6.4 3.2 3.2 0 0 0 0-6.4zM17.4 6a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-2.8.7.7-2.7-.2-.3A8 8 0 1 1 12 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-1.2-.6-2-1-2.8-2.3-.2-.3 0-.5.1-.6l.4-.5c.1-.2.1-.4 0-.6-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.5.2-.6.4-.6.7-.6 1.5-.5 2.4.2 1.7 1 3.1 2.6 4.4 1.7 1.4 3 1.6 4.1 1.4.7-.1 1.5-.6 1.7-1.3.2-.6.2-1.1.1-1.2-.1-.1-.2-.1-.4-.2z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+        const menuToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.main-nav');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+  </script>
+
+</body>
+</html>
